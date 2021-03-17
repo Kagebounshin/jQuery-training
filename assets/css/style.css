@@ -1,3 +1,63 @@
-.fruits {
-    background-color: yellow;
+.animation {
+    transition: all 0.3s ease;
 }
+
+.gameboard {
+    height: 300px;
+    width: 300px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    perspective: 100px
+}
+
+
+.card {
+    
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    transition: transform 0.4s;
+    transform-style: preserve-3d;
+    
+}
+
+.card.flipped {
+    transform: rotateY(180deg);
+}
+
+.card .front,
+.card .back {
+    display: block;
+    backface-visibility: hidden;
+    position: absolute;
+}
+
+.card .back {
+    transform: rotateY(180deg);
+}
+.front {
+    background-color: red;
+    height: 100px;
+    width: 100px;
+}
+
+.back {
+    background-color: #ffffff;
+    height: 100px;
+    width: 100px;
+}
+
+
+
+
+
+/*.fruits {
+    background-color: yellow;
+}*/

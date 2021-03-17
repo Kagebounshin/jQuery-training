@@ -1,6 +1,37 @@
 $(document).ready(function() {
 
+
+$(".card").click(function(){
+    $(this).toggleClass('flipped');
 });
+
+
+});
+
+
+
+/*
+
+$(".back").dblclick(function() {
+    $(this).hide();
+});
+
+$(".front").click(function(){
+    $(this).hide("slow", function(){
+        alert('Im hidden');
+    });
+});
+
+*/
+
+/*
+// skapar 9 st divs 
+for ( var i = 0; i < 8; i++) {
+    $("<div>").appendTo(document.body);
+}
+*/
+
+
 
 /*CHECK YOUR FUNCTIONS WITH console.log FOR EACH STEP. */
 
@@ -39,7 +70,7 @@ console.log(result);
 
 // Working With Math 
 
-let random = Math.random();   
+/*let random = Math.random();   
 console.log(random);
 
 // retunerar en decimal mellan 0 & 1 
@@ -59,8 +90,10 @@ let numbers = [];
 
 for (let i = 0; i < 10; i++) {
     numbers.push(Math.floor(Math.random() * 100)); /*genom att multiplicera med 100 flyttar man decimalen 20 platser bort, 
-                                                   och genom att ha Math.floor så avrundas talet till närmsta heltal. */
-}
+                                                   och genom att ha Math.floor så avrundas talet till närmsta heltal. */            
+                                                   
+                                                   
+/*                                                   
 console.log(numbers);
 
 console.log(Math.round(1.49122565)); // 1 rundar till närmsta heltal. 
@@ -167,4 +200,4 @@ $("p").click(function(){
 $("#fruitsButton").mouseenter(function(){
     $(this).fadeTo(2000, 0.2).fadeTo(2000, 1);
 });
-
+*/
